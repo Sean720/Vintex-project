@@ -26,13 +26,17 @@
                     style="width: 100px;  border-radius: 50%;" alt="logo">
                   <h4 class="mt-1 mb-5 pb-1">La_Solution School</h4>
                 </div>
-
-                <form>
+                <?php if(session()->getFlashdata('msg')):?>
+                    <div class="alert alert-info">
+                       <?= session()->getFlashdata('msg') ?>
+                    </div>
+                <?php endif;?>
+                <form action="<?=base_url()?> Home/adminLogin">
                   <p style="text-align: center; font-weight:bold; font-size: 26px; margin-bottom: 40px; margin-top: -30px;">Login</p>
 
                   <div class="form-outline mb-4">
                     <input type="email" id="form2Example11" class="form-control"
-                      placeholder="Student/Staff Reg. No." name="username"/>
+                      placeholder="Student/Staff Reg. No." name="reg_no"/>
                     <label class="form-label" for="form2Example11">Username</label>
                   </div>
 

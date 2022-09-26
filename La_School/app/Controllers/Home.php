@@ -12,9 +12,6 @@ class Home extends BaseController
 
     public function adminLogin($id)
 {
-<<<<<<< HEAD
-    
-=======
     $admin = new Admin();
     $reg_no = this->request->getVar('reg_no');
     $password = $this->request->getVar('password');
@@ -44,7 +41,6 @@ class Home extends BaseController
         $session->setFlashdata('msg', 'wrong email.');
         return redirect()->to('/login');
     }
->>>>>>> a096aa78b578f3c00db3923c54be536ce6546b16
 }
 
 }

@@ -7,7 +7,9 @@ class Home extends BaseController
 {
     public function index()
     {
+        helper(['form']);
         return view('login/login');
+       
     }
 
     public function adminLogin($id)
@@ -35,11 +37,11 @@ class Home extends BaseController
         }
         else{
             $session->setFlashdata('msg', 'wrong password.');
-            return redirect()->to('/login');
+            return redirect()->to('login/login');
         };
     }else{
         $session->setFlashdata('msg', 'wrong email.');
-        return redirect()->to('/login');
+        return redirect()->to('login/login');
     }
 }
 

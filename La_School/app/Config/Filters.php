@@ -17,13 +17,20 @@ class Filters extends BaseConfig
      *
      * @var array
      */
+    // public $aliases = [
+    //     'csrf'          => CSRF::class,
+    //     'toolbar'       => DebugToolbar::class,
+    //     'honeypot'      => Honeypot::class,
+    //    
+    // ];
     public $aliases = [
-        'csrf'          => CSRF::class,
-        'toolbar'       => DebugToolbar::class,
-        'honeypot'      => Honeypot::class,
+		'csrf'     => CSRF::class,
+		'toolbar'  => DebugToolbar::class,
+		'honeypot' => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
-    ];
+		'routeFilter' => \App\Filters\RouteFilter::class,
+	];
 
     /**
      * List of filter aliases that are always

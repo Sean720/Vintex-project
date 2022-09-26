@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -12,6 +13,12 @@
     <link rel="stylesheet" href="<?=base_url()?>/public/css/login.css">
     <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+=======
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="<?=base_url()?>/public/css/login.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+>>>>>>> a096aa78b578f3c00db3923c54be536ce6546b16
     <title>Login   </title>
 </head>
 <body>
@@ -30,17 +37,26 @@
                     style="width: 100px;  border-radius: 50%;" alt="logo">
                   <h4 class="mt-1 mb-5 pb-1">La_Solution School</h4>
                 </div>
+<<<<<<< HEAD
                 <?php if(session()->getFlashdata('msg')):?>
                     <div class="alert alert-info">
                        <?= session()->getFlashdata('msg') ?>
                     </div>
                 <?php endif;?>
                 <form action="<?=base_url()?> Home/adminLogin">
+=======
+
+                <form>
+>>>>>>> a096aa78b578f3c00db3923c54be536ce6546b16
                   <p style="text-align: center; font-weight:bold; font-size: 26px; margin-bottom: 40px; margin-top: -30px;">Login</p>
 
                   <div class="form-outline mb-4">
                     <input type="email" id="form2Example11" class="form-control"
+<<<<<<< HEAD
                       placeholder="Student/Staff Reg. No." name="reg_no"/>
+=======
+                      placeholder="Student/Staff Reg. No." name="username"/>
+>>>>>>> a096aa78b578f3c00db3923c54be536ce6546b16
                     <label class="form-label" for="form2Example11">Username</label>
                   </div>
 

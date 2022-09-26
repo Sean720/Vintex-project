@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/La_Solution/';
+    public $baseURL = 'http://localhost/Vintex-project/La_Solution/';
 
     /**
      * --------------------------------------------------------------------------
